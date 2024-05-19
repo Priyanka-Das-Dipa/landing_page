@@ -1,0 +1,5 @@
+.quick-links-list li a:hover {
+  border-bottom: 2px solid rgb(236, 23, 23);
+  padding-top: 20px;
+  padding-bottom: 5px;
+}

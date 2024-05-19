@@ -4,106 +4,300 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life In UK Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .text-primary {
         color: #2f346f;
       }
+      .bg-primary {
+        background: #2f346f;
+      }
     </style>
   </head>
   <body>
-    <header class="">
-      <nav>
-        <header class="bg-white">
-          <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
-              <div class="flex-1 md:flex md:items-center md:gap-12">
-                <a class="block text-teal-600" href="#">
-                  <img
-                    src="/src/images/logo.webp"
-                    width="300"
-                    height="100"
-                    alt=""
-                    class="h-20"
-                  />
-                </a>
-              </div>
+    <!-- navbar -->
+    <header>
+      <!-- navbar one -->
+      <div class="bg-primary">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-white">
+          <div class="flex items-center justify-between py-4">
+            <div>
+              <a class="hover:text-red-500">
+                <i class="fa-solid fa-phone text-red-500 hover:text-white"> </i>
+                01158376502 | 07913256387
+              </a>
+            </div>
+            <div class="hover:text-red-500 text-white">
+              <a class="pr-2"><i class="fa-regular fa-user"></i> LOGIN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar two -->
+      <div class="bg-white pt-5">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex-1 md:flex md:items-center md:gap-12">
+              <a class="block text-teal-600" href="#">
+                <img
+                  src="/src/images/logo.webp"
+                  width="300"
+                  height="100"
+                  alt=""
+                  class="h-20"
+                />
+              </a>
+            </div>
 
-              <div class="md:flex md:items-center md:gap-12">
-                <nav
-                  aria-label="Global"
-                  class="hidden md:block uppercase font-bold"
+            <div class="md:flex md:items-center md:gap-12">
+              <nav
+                aria-label="Global"
+                class="hidden lg:block uppercase font-bold"
+              >
+                <ul class="flex items-center gap-6 text-lg">
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Guarantees
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Our Courses
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Testimonial
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Blog
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-primary transition hover:text-gray-500/75"
+                      href="#"
+                    >
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="block lg:hidden">
+                <button
+                  class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
                 >
-                  <ul class="flex items-center gap-6 text-lg">
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Guarantees
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Our Courses
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        About us
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Testimonial
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Blog
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        class="text-primary transition hover:text-gray-500/75"
-                        href="#"
-                      >
-                        Contact us
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
-        </header>
-      </nav>
-      This is Header
+        </div>
+      </div>
     </header>
+
+    <!-- footer -->
+    <footer class="bg-primary text-white">
+      <div class="mx-auto max-w-screen-xl px-4 pb-6 sm:px-6 lg:px-8">
+        <div
+          class="mt-16 grid grid-cols-1 gap-8 border-gray-100 pt-16 lg:grid-cols-4"
+        >
+          <div class="text-center sm:text-left space-y-4">
+            <p class="text-lg font-bold text-white uppercase border-b-2 pb-2">
+              About Us
+            </p>
+            <img src="/src/images/fooetr-logo.webp" alt="" />
+            <p class="text-sm">
+              Fast Track Training offers A1/ A2/ B1 English and Life in the UK
+              lessons both online on Zoom. We have a 99% pass rate and free
+              retraining if the student fails their exam. Contact us on
+              01158376502 to get more information.
+            </p>
+            <ul class="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
+              <li class="hover:text-red-500">
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="hover:text-red-500">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="hover:text-red-500">
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="hover:text-red-500">
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-center sm:text-left space-y-4">
+            <p class="text-lg font-bold text-white uppercase border-b-2 pb-2">
+              Award Winning
+            </p>
+            <img
+              src="/src/images/fooetr-logo-2.webp"
+              height="113"
+              width="116"
+              alt=""
+              class=""
+            />
+            <p class="text-sm font-normal">
+              Fast Track Training offers A1/ A2/ B1 English and Life in the UK
+              lessons both online on Zoom. We have a 99% pass rate and free
+              retraining if the student fails their exam. Contact us on
+              01158376502 to get more information.
+            </p>
+          </div>
+
+          <div class="text-center sm:text-left space-y-4">
+            <p class="text-lg font-bold text-white uppercase border-b-2 pb-2">
+              Quick Links
+            </p>
+            <ul
+              class="quick-links-list mt-8 space-y-4 text-sm font-medium uppercase"
+            >
+              <li>
+                <a class="" href="#"> Contact us </a>
+              </li>
+
+              <li>
+                <a class="" href="#"> Our Offices </a>
+              </li>
+
+              <li>
+                <a class="" href="#"> Cancellation Refound Policy</a>
+              </li>
+
+              <li>
+                <a class="" href="#"> Affiliate Area </a>
+              </li>
+
+              <li>
+                <a class="" href="#"> Terms Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-center sm:text-left space-y-4">
+            <p class="text-lg font-bold text-white uppercase border-b-2 pb-2">
+              Opening Hours
+            </p>
+
+            <ul class="mt-8 space-y-4 text-sm">
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Monday: </span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Tuesday: </span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Wednesday: </span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Thursday: </span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Friday:</span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Saturday:</span> 9am-6pm
+                </a>
+              </li>
+              <li>
+                <a class="" href="#">
+                  <span class="font-bold">Sunday:</span> 9am-6pm
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- red section of footer -->
+      <div class="bg-red-500">
+        <div class="mx-auto max-w-screen-xl px-4 pb-4">
+          <div class="mt-16 pt-6 sm:flex sm:items-center sm:justify-between">
+            <p class="text-center text-sm text-white sm:text-left">
+              &copy; 2024 Fast Track Training Worldwide Learning and Tuition.
+            </p>
+            <p>
+              Made by
+              <span class="font-bold text-black"> Digital Design Online </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
