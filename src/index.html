@@ -558,47 +558,62 @@
     </section>
 
     <!-- Our Recent Article section -->
-    <section
-      class="relative bg-cover bg-center"
-      style="background-image: url('./images/background-image.png')"
-    >
-      <div class="mx-auto max-w-screen-xl px-4 pt-10 pb-24">
-        <div class="items-center space-y-2">
-          <div class="text-center flex items-center justify-center">
-            <img src="./images/Fast-Track-Training-logo2.png.webp" alt="" />
-          </div>
-          <p class="font-bold text-2xl text-center">Our Recent Articles</p>
-        </div>
+
+    <section class="relative h-screen">
+      <div class="mx-auto max-w-screen-xl px-4 pt-10">
+        <!-- Background Image -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-6 pt-6"
+          class="absolute inset-0 bg-cover bg-center z-0"
+          style="background-image: url('./images/background-image.png')"
+        ></div>
+
+        <div class="absolute inset-0 bg-red-500 opacity-90 z-10"></div>
+
+        <div
+          class="relative z-20 h-full flex flex-col justify-center items-center text-white"
         >
-          <div>
-            <img
-              alt=""
-              src="./images/card-1.webp"
-              class="h-full w-full rounded-xl object-cover shadow-xl"
-            />
+          <div class="items-center space-y-2">
+            <div class="text-center flex items-center justify-center">
+              <img src="./images/Fast-Track-Training-logo2.png.webp" alt="" />
+            </div>
+            <p
+              class="font-bold text-2xl text-center border-b-4 border-[#2F346F]"
+            >
+              Our Recent Articles
+            </p>
           </div>
-          <div>
-            <img
-              alt=""
-              src="./images/card-2.webp"
-              class="h-full w-full rounded-xl object-cover shadow-xl"
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src="./images/card-3.webp"
-              class="h-full w-full rounded-xl object-cover shadow-xl"
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src="./images/card-4.webp"
-              class="h-full w-full rounded-xl object-cover shadow-xl"
-            />
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-6 pt-6"
+          >
+            <div>
+              <img
+                alt=""
+                src="./images/card-1.webp"
+                class="h-full w-full rounded-xl object-cover shadow-xl"
+              />
+            </div>
+            <div>
+              <img
+                alt=""
+                src="./images/card-2.webp"
+                class="h-full w-full rounded-xl object-cover shadow-xl"
+              />
+            </div>
+            <div>
+              <img
+                alt=""
+                src="./images/card-3.webp"
+                class="h-full w-full rounded-xl object-cover shadow-xl"
+              />
+            </div>
+            <div>
+              <img
+                alt=""
+                src="./images/card-4.webp"
+                class="h-full w-full rounded-xl object-cover shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </div>
