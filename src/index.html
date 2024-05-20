@@ -8,7 +8,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .text-primary {
@@ -154,60 +156,30 @@
 
     <!-- Banner Section -->
     <section>
-      <!-- <div>
-        <div>
-          <h1 class="uppercase text-xl">
-            PASS YOUR HOME OFFICE APPROVED TESTS
-          </h1>
-          <p class="uppercase text-5xl font-bold">
-            99% pass <br />
-            rate <br />
-            first time
-          </p>
-          <ul class="">
-            <li class="font-medium text-white hover:text-[#db4746]">
-              <i
-                class="fa-solid fa-check text-[#db4746] hover:text-white text-2xl font-bold"
-              ></i>
-              Unlimited online training until you pass
-            </li>
-            <li class="font-medium text-white hover:text-[#db4746]">
-              <i
-                class="fa-solid fa-check text-[#db4746] hover:text-white text-2xl font-bold"
-              ></i>
-              Suitable for British citizenship
-            </li>
-            <li class="font-medium text-white hover:text-[#db4746]">
-              <i
-                class="fa-solid fa-check text-[#db4746] hover:text-white text-2xl font-bold"
-              ></i>
-              Professional English Teachers
-            </li>
-            <li class="font-medium text-white hover:text-[#db4746]">
-              <i
-                class="fa-solid fa-check text-[#db4746] hover:text-white text-2xl font-bold"
-              ></i>
-              All training materials are included
-            </li>
-          </ul>
-        </div>
-        <div>
-
-        </div>
-      </div> -->
-
-      <section class="relative bg-gray-100 py-12">
+      <div class="triangle-background z-0"></div>
+      <div
+        class="bg-gray-100 py-12 banner-section"
+        style="
+          background-image: url(images/banner-background.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+        "
+      >
         <div
           class="mx-auto max-w-screen-xl flex flex-col lg:flex-row items-center"
         >
-          <div class="text-center lg:text-left lg:w-1/2">
-            <p class="text-lg font-semibold text-gray-700 mb-2">
+          <div class="text-center lg:text-left lg:w-1/2 z-10">
+            <p class="text-lg font-semibold text-white mb-2">
               PASS YOUR HOME OFFICE APPROVED TESTS
             </p>
-            <h1 class="text-3xl font-bold text-gray-900 mb-1">99% PASS RATE</h1>
-            <span class="text-5xl font-extrabold text-gray-900 block mb-6"
-              >FIRST TIME</span
-            >
+            <h1 class="text-5xl font-bold text-white mb-1">
+              99% PASS <br />RATE <br /><span
+                class="text-5xl font-extrabold text-white block mb-6"
+                >FIRST TIME</span
+              >
+            </h1>
+
             <ul class="space-y-4 mb-6">
               <li
                 class="flex items-center font-medium text-white hover:text-[#db4746]"
@@ -275,42 +247,51 @@
               </li>
             </ul>
             <button
-              class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition"
+              class="bg-white text-xl text-[#2f346f] font-bold py-4 px-8 rounded-full transition"
             >
               Get Information
-              <span class="ml-2"><i class="bi bi-chevron-right"></i></span>
+              <span class="ml-2"
+                ><i class="fa-solid fa-circle-chevron-right"></i
+              ></span>
             </button>
           </div>
-          <div class="lg:w-1/2 flex justify-center items-end mt-8 lg:mt-0">
-            <div class="relative">
-              <img
-                src="./images/10years2-1.png.webp"
-                class="absolute top-0 left-0 w-16 h-16"
-                alt="10 years celebration"
-              />
-              <div class="bg-white rounded-full p-6 text-center shadow-lg mb-8">
-                <h3 class="text-2xl font-bold">
-                  <span id="counter">0</span><span class="text-xl">k+</span>
+          <div class="relative w-80 h-80 md:w-96 md:h-96">
+            <!-- Main Image -->
+            <img
+              src="./images/smiling-lady-b1-png-1-1.png.webp"
+              class="absolute inset-0 w-full h-full object-cover"
+              alt="Main image"
+            />
+            <!-- Image on the left side -->
+            <img
+              src="./images/10years2-1.png.webp"
+              class="absolute top-1/4 left-0 transform -translate-y-1/2 w-16 h-16 md:w-24 md:h-24"
+              alt="Left side image"
+            />
+            <!-- container on the top right side -->
+            <div
+              class="bg-white rounded-md px-3 py-2 md:px-10 md:py-5 text-center shadow-lg mb-8 absolute top-0 md:-right-1/2 right-0"
+            >
+              <div>
+                <h3 class="text-lg md:text-4xl font-bold">
+                  <span id="counter">0</span
+                  ><span class="text-lg md:text-4xl"> k+</span>
                 </h3>
-                <p class="text-gray-600">
+                <p class="text-gray-600 md:text-lg text-sm md:font-medium">
                   STUDENTS <br class="md:hidden" />
                   PASSED!
                 </p>
               </div>
-              <img
-                src="./images/banner-background.jpg"
-                alt="Main Banner Image"
-              />
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
     <!-- Banner batch section -->
     <section class="bg-[#F2F2F2] py-5">
       <div class="mx-auto max-w-screen-xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-20 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-20 items-center pt-14">
           <!-- batch-1 -->
           <div class="text-center">
             <div class="flex justify-center items-center pb-2">
@@ -351,7 +332,9 @@
         </div>
         <p class="font-bold text-2xl text-center text-primary">Our Courses</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-20 lg:gap-0 gap-10"
+      >
         <!-- card-1 -->
         <div class="bg-[#db4746] px-9 py-16 rounded-l-lg text-white">
           <img src="./images/A01.svg" class="size-10" alt="" />
@@ -553,12 +536,14 @@
     <section class="bg-[#2F346F] text-white">
       <div class="p-14">
         <div class="border rounded-2xl p-24">
-          <h1 class="uppercase font-bold text-4xl text-center">
+          <h1 class="uppercase font-bold md:text-4xl text-2xl text-center">
             FIND OUT MORE ABOUT OUR BRITISH CITIZENSHIP COURSES. SPEAK WITH US
             ON
             <span class="underline"> 01158376502</span> TO DISCUSS YOUR TEST!
           </h1>
-          <div class="flex justify-center items-center gap-12 pt-8">
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-12 pt-8"
+          >
             <button class="bg-red-500 px-10 py-3 rounded-2xl">
               Get More Information
               <i class="fa-solid fa-circle-chevron-right"></i>
@@ -769,5 +754,23 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
+
+<!-- <div class="relative">
+  <img
+    src="./images/10years2-1.png.webp"
+    class="absolute top-0 left-0 w-16 h-16"
+    alt="10 years celebration"
+  />
+  <div class="bg-white rounded-full p-6 text-center shadow-lg mb-8">
+    <h3 class="text-2xl font-bold">
+      <span id="counter">0</span><span class="text-xl">k+</span>
+    </h3>
+    <p class="text-gray-600">
+      STUDENTS <br class="md:hidden" />
+      PASSED!
+    </p>
+  </div>
+</div> -->
